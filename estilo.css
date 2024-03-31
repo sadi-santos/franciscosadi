@@ -1,0 +1,74 @@
+/* Estilos gerais */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Define a fonte padrão do site */
+}
+
+/* Estilização do menu de navegação */
+.navbar {
+    display: flex; /* Organiza os itens do menu na horizontal */
+    background-color: #333; /* Define a cor de fundo do menu */
+    justify-content: center; /* Centraliza os itens do menu horizontalmente */
+    position: sticky; /* Faz o menu fixo no topo da página durante a rolagem */
+    top: 0; /* Posiciona o menu no topo da página */
+    z-index: 1000; /* Define a prioridade de exibição do menu sobre outros elementos */
+}
+
+.navbar a {
+    color: white; /* Define a cor do texto dos links do menu */
+    padding: 14px 20px; /* Define o espaçamento interno dos links do menu */
+    text-decoration: none; /* Remove o underline padrão dos links */
+    text-align: center; /* Centraliza o texto dos links do menu */
+}
+
+.navbar a:hover {
+    background-color: #ddd; /* Define a cor de fundo dos links do menu ao passar o mouse */
+    color: black; /* Define a cor do texto dos links do menu ao passar o mouse */
+}
+
+/* Estilização das seções */
+section {
+    padding: 20px; /* Adiciona um espaçamento interno nas seções */
+    margin: 10px; /* Adiciona uma margem externa nas seções */
+}
+
+h2 {
+    margin-bottom: 15px; /* Adiciona uma margem inferior aos títulos (<h2>) */
+}
+
+/* Estilização do formulário de contato */
+.contact-form {
+    display: flex; /* Continua organizando os elementos do formulário na vertical */
+    flex-direction: column; /* Mantém a direção do empilhamento dos elementos como coluna */
+    width: 100%; /* Mantém a largura do formulário para ocupar 100% da seção */
+}
+
+.contact-form input, .contact-form textarea {
+    margin: 10px 0; /* Mantém a margem superior e inferior */
+    padding: 10px; /* Mantém o espaçamento interno */
+    border: 1px solid #ccc; /* Mantém a borda fina */
+    border-radius: 4px; /* Mantém os cantos arredondados */
+}
+
+.contact-form textarea {
+    height: 100px; /* Mantém a altura da caixa de texto */
+}
+
+/* Ajuste específico para o botão "Enviar" */
+.contact-form input[type="submit"] {
+    background-color: #4CAF50; /* Mantém a cor de fundo */
+    color: white; /* Mantém a cor do texto */
+    padding: 10px; /* Ajusta, se necessário, para tamanho vertical */
+    border: none; /* Mantém sem borda */
+    border-radius: 4px; /* Mantém os cantos arredondados */
+    cursor: pointer; /* Mantém o cursor como ponteiro */
+    transition: background-color 0.2s ease-in-out; /* Mantém a transição suave */
+    width: auto; /* Ajusta para largura automática baseada no conteúdo interno */
+    align-self: center; /* Centraliza o botão no contêiner flexível */
+    margin: 10px 0; /* Garante margem superior e inferior para separação */
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #222; /* Ajusta a cor ao passar o mouse */
+}
